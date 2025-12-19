@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata: 
+  name: pythonapp-ingress
+spec:
+   ingressClassName: nginx
+   rules:
+   - host: "pythonapp.atulittechnologies.in"
+     http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: pythonappsvc
+            port:
+              number: 80 

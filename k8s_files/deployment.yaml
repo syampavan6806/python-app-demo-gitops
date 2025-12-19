@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: pythondemoapp
-        image: 268428819789.dkr.ecr.ap-south-1.amazonaws.com/python-app-demo:2
+        image: 268428819789.dkr.ecr.ap-south-1.amazonaws.com/python-app-demo:3
         ports:
         - containerPort: 5000
         resources:
